@@ -16,10 +16,11 @@ def compress_lzma(data, level=9 , dict_size=64):
     )
     
 def decompress_lzma(data):
-    return lzma.dedcompress(data)
+    return lzma.decompress(data)
 
 def compress_zlib(data, level=9):
     return zlib.compress(data, level)
 
 def compress_bz2(data, level=9):
+
     return bz2.compress(data, compresslevel=level)
